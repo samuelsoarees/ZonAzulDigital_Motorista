@@ -12,6 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
 import { CadastroPage } from '../pages/cadastro/cadastro';
+import { PerfilPage } from '../pages/perfil/perfil';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CadastroPage } from '../pages/cadastro/cadastro';
     AtivoPage,
     TabsPage,
     LoginPage,
-    CadastroPage
+    CadastroPage,
+    PerfilPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { CadastroPage } from '../pages/cadastro/cadastro';
     AtivoPage,
     TabsPage,
     LoginPage,
-    CadastroPage
+    CadastroPage,
+    PerfilPage
   ],
   providers: [
     StatusBar,
