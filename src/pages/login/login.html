@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>Login</ion-title>
   </ion-navbar>
 
@@ -16,6 +16,8 @@
 <ion-content padding>
   <ion-list>
 
+      <img class="logo" src="../../assets/imgs/Car.png" alt="">
+      <img class="nome-logo" src="../../assets/imgs/logoZA.png" alt="">
     <ion-item>
       <ion-label floating>CPF</ion-label>
       <ion-input type="number"></ion-input>
@@ -25,12 +27,11 @@
       <ion-label floating>Senha</ion-label>
       <ion-input type="password"></ion-input>
     </ion-item>
-
-    <div padding>
-      <button ion-button color="primary" block (click)="pushTabsPage()">Entrar</button>
-    </div>
-    <div padding>
-      <button ion-button clear block class="b-cadastro" (click)="pushCadastro()">CADASTRE-SE</button>
-    </div>
   </ion-list>
+  <div>
+    <button ion-button color="primary" block (click)="pushTabsPage()">Entrar</button>
+  </div>
+  <div>
+    <button ion-button clear block class="b-cadastro" (click)="pushCadastro()">CADASTRE-SE</button>
+  </div>
 </ion-content>
