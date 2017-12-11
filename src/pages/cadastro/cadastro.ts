@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ToastController } from 'ionic-angular';
 
 /**
  * Generated class for the CadastroPage page.
@@ -15,11 +16,24 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class CadastroPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private toastCtrl: ToastController) {
   }
-
+  
   ionViewDidLoad() {
     console.log('ionViewDidLoad CadastroPage');
   }
 
+  presentToast() {
+    let toast = this.toastCtrl.create({
+      message: 'Cadastro realizado com sucesso',
+      duration: 3000,
+      position: 'bottom'
+    });
+    toast.present;
+    console.log("Entrou no metodo");
+  }
+  
+  public cadastrar(){
+    this.presentToast();  
+  }
 }
