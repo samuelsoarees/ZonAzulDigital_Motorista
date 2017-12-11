@@ -23,17 +23,17 @@ export class CadastroPage {
     console.log('ionViewDidLoad CadastroPage');
   }
 
-  presentToast() {
+  presentToast(mensagem:string,duracao:number) {
     let toast = this.toastCtrl.create({
-      message: 'Cadastro realizado com sucesso',
-      duration: 3000,
+      message: mensagem,
+      duration: duracao,
       position: 'bottom'
     });
-    toast.present;
-    console.log("Entrou no metodo");
+    
+    toast.present();
   }
   
   public cadastrar(){
-    this.presentToast();  
+    this.presentToast("Cadastro realizado com sucesso!!",3000);  
   }
 }
