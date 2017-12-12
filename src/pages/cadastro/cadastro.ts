@@ -15,6 +15,9 @@ import { ToastController } from 'ionic-angular';
   templateUrl: 'cadastro.html',
 })
 export class CadastroPage {
+  public nome  : string;
+  public cpf   : string;
+  public senha : string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private toastCtrl: ToastController) {
   }
@@ -34,6 +37,12 @@ export class CadastroPage {
   }
   
   public cadastrar(){
-    this.presentToast("Cadastro realizado com sucesso!!",3000);  
+    
+    if(this.nome == undefined || this.cpf == undefined || this.senha == undefined){
+      this.presentToast('Preencha todos os campos',3000);
+    }else{
+      this.presentToast("Cadastro realizado com sucesso!!",3000);  
+    }
+
   }
 }
