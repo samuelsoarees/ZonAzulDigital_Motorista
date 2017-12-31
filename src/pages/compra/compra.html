@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>
       Comprar
     </ion-title>
@@ -7,5 +7,30 @@
 </ion-header>
 
 <ion-content padding>
+  
+  <ion-card color= "primary" class="layoutCard">
+    <ion-card-header >
+      Saldo:
+    </ion-card-header>
+    <ion-card-content>
+    R$: 10,00  
+    </ion-card-content>
+  </ion-card>
+  
+  <div class="layoutInput">
+    <ion-item>
+      <ion-label floating >Placa</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating >Confirmação de Senha</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  </div>
+  
+  <div class="layoutButton">
+    <button ion-button color="primary" block >Comprar Cartão</button>
+  </div>
 
 </ion-content>
