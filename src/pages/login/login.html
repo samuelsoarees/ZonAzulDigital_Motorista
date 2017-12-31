@@ -13,25 +13,26 @@
 </ion-header>
 
 
-<ion-content padding>
-  <ion-list>
+<ion-content>
+  <ion-list padding>
 
       <img class="logo" src="../../assets/imgs/Car.png" alt="">
       <img class="nome-logo" src="../../assets/imgs/logoZA.png" alt="">
-    <ion-item>
+
+      <ion-item  class="item-login">
       <ion-label floating>CPF</ion-label>
       <ion-input type="number"></ion-input>
     </ion-item>
 
-    <ion-item>
+    <ion-item class="item-login">
       <ion-label floating>Senha</ion-label>
       <ion-input type="password"></ion-input>
     </ion-item>
   </ion-list>
-  <div>
+  <div class="div-entrar">
     <button ion-button color="primary" block (click)="pushTabsPage()">Entrar</button>
   </div>
-  <div>
+  <div class="div-cadastro">
     <button ion-button clear block class="b-cadastro" (click)="pushCadastro()">CADASTRE-SE</button>
   </div>
 </ion-content>
