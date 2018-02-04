@@ -32,23 +32,24 @@ ion-label#lbl-0, ion-label#lbl-1 {
   width: 100%;
   display: flex;
 }
-.div-cadastro {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  display: flex;
-  overflow: hidden;
-  contain: strict;
-}
- ion-item.item-login {
- color: #4889fc;
-}
+  .div-cadastro {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    // contain: strict;
+  }
 
-.list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
-  border-bottom: 0;
-}
+  ion-item.item-login {
+    color: #4889fc;
+  }
 
-.list-ios .item-block .item-inner {
-  border-bottom: 0.55px solid #c8c7cc !important;
-}
+  .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+    border-bottom: 0;
+  }
+
+  .list-ios .item-block .item-inner {
+    border-bottom: 0.55px solid #c8c7cc !important;
+  }
 }
