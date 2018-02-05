@@ -28,12 +28,22 @@ ion-label#lbl-0, ion-label#lbl-1 {
 }
 .div-entrar {
   position: absolute;
+  z-index: 10;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   bottom: 38px;
   width: 100%;
   display: flex;
 }
   .div-cadastro {
     position: absolute;
+    z-index: 10;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     bottom: 0px;
     width: 100%;
     display: flex;
@@ -51,5 +61,9 @@ ion-label#lbl-0, ion-label#lbl-1 {
 
   .list-ios .item-block .item-inner {
     border-bottom: 0.55px solid #c8c7cc !important;
+  }
+
+  .scroll-content, .fixed-content {
+    margin: 44px 0 78px;
   }
 }
