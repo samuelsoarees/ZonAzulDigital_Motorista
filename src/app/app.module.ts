@@ -27,7 +27,13 @@ import { PerfilPage } from '../pages/perfil/perfil';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp,{
+      pageTransition : 'ios-transition',
+      backButtonText : '',
+      tabsHideOnSubPages : true,
+      scrollAssist : false,
+      autoFocusAssist : false
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
