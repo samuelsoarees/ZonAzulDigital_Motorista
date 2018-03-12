@@ -18,25 +18,30 @@
 
     <img class="logo" src="../../assets/imgs/Car.png" alt="">
     <img class="nome-logo" src="../../assets/imgs/logoZA.png" alt="">
-    
+
     <ion-item>
       <ion-label floating>Nome</ion-label>
-      <ion-input  [(ngModel)]="nome" type="text"></ion-input>
+      <ion-input  [(ngModel)]="user.nome" type="text"></ion-input>
     </ion-item>
-    
+
     <ion-item>
       <ion-label floating>CPF</ion-label>
-      <ion-input [(ngModel)]="cpf" type="number"></ion-input>
+      <ion-input [(ngModel)]="user.cpf" type="number"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Email</ion-label>
+      <ion-input [(ngModel)]="userLogin.email" type="email"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label floating>Senha</ion-label>
-      <ion-input [(ngModel)]="senha" type="password"></ion-input>
+      <ion-input [(ngModel)]="userLogin.senha" type="password"></ion-input>
     </ion-item>
   </ion-list>
 
   <div>
-    <button ion-button color="primary" block (click)="cadastrar()" >Cadastrar</button>
+    <button ion-button color="primary" block (click)="cadastrar(userLogin, user)" >Cadastrar</button>
   </div>
 
 </ion-content>

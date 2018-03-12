@@ -14,6 +14,11 @@ import { LoginPage } from '../pages/login/login';
 import { CadastroPage } from '../pages/cadastro/cadastro';
 import { PerfilPage } from '../pages/perfil/perfil';
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { FIREBASE_CONFIG } from './app.firebase.config';
+import { AngularFireAuth } from 'angularfire2/auth';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -33,7 +38,9 @@ import { PerfilPage } from '../pages/perfil/perfil';
       tabsHideOnSubPages : true,
       scrollAssist : false,
       autoFocusAssist : false
-    })
+    }),
+    AngularFireModule.initializeApp(FIREBASE_CONFIG),
+    AngularFireDatabaseModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -49,7 +56,8 @@ import { PerfilPage } from '../pages/perfil/perfil';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    AngularFireAuth
   ]
 })
 export class AppModule {}

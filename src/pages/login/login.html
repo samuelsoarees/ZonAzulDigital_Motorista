@@ -16,26 +16,26 @@
 <ion-content>
   <ion-list padding>
 
-      <img class="logo" src="../../assets/imgs/Car.png" alt="">
-      <img class="nome-logo" src="../../assets/imgs/logoZA.png" alt="">
+    <img class="logo" src="../../assets/imgs/Car.png" alt="">
+    <img class="nome-logo" src="../../assets/imgs/logoZA.png" alt="">
 
-      <ion-item  class="item-login">
-      <ion-label floating>CPF</ion-label>
-      <ion-input type="number"></ion-input>
+    <ion-item class="item-login">
+      <ion-label floating>Email</ion-label>
+      <ion-input [(ngModel)]="userLogin.email" type="email"></ion-input>
     </ion-item>
 
     <ion-item class="item-login">
       <ion-label floating>Senha</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input [(ngModel)]="userLogin.senha" type="password"></ion-input>
     </ion-item>
   </ion-list>
-</ion-content>
 
-<div class="div-entrar">
-  <button ion-button color="primary" block (click)="pushTabsPage()">Entrar</button>
-</div>
-<div class="div-cadastro">
-  <button ion-button clear block class="b-cadastro" (click)="pushCadastro()">
-    CADASTRE-SE
-  </button>
-</div>
+
+    <button ion-button color="primary" bottom full (click)="login(userLogin)">Entrar</button>
+
+  <div>
+    <button ion-button clear block class="b-cadastro" (click)="pushCadastro()">
+      CADASTRE-SE
+    </button>
+  </div>
+</ion-content>
