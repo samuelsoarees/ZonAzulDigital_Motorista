@@ -57,6 +57,8 @@ export class CadastroPage {
       .then((user: any) => {
         console.log(user);
         this.salvandoUsuario(user)
+        toast.setMessage('Cadastro realizado com sucesso!!');
+        toast.present();
       })
       .catch((error: any) => {
 
